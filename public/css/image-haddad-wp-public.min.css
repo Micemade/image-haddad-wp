@@ -1,0 +1,116 @@
+ul.product-sub-categories{list-style:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-ms-flex-flow:wrap;flex-flow:wrap;text-align:center;font-size:13px;letter-spacing:.03em;margin:0;margin-bottom:2em}
+ul.product-sub-categories li{border:1px solid #fff;border-top:0;margin-left:-1px}
+ul.product-sub-categories li a{padding:5px 10px;background:#e5e5e5}
+ul.product-sub-categories li a:hover{background:#f6f6f6}
+ul.products li.product .price.coupon,.single-product .price.coupon>.woocommerce-Price-amount{font-size:85%;margin-top:-8px;opacity:.8}
+.woocommerce-Price-amount.amount-eur{font-size:.9em;opacity:.6}
+.haddad-coupons{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.entry-summary .haddad-coupons,.summary .haddad-coupons,.mmqv-product-summary.summary .haddad-coupons{margin-bottom:1.3em}
+span.haddad-coupon-price{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:auto !important;font-weight:bold !important;margin:0;margin-top:10px;padding:5px;background:beige;-ms-flex-item-align:center;align-self:center;font-size:110%}
+.entry-summary span.haddad-coupon-price,.summary span.haddad-coupon-price,.mmqv-product-summary.summary span.haddad-coupon-price{display:block;padding:5px 15px 10px 15px;line-height:0;margin-left:0;margin-right:50%;-ms-flex-item-align:start;align-self:flex-start}
+.entry-summary span.haddad-coupon-price .label,.entry-summary span.haddad-coupon-price .desc,.summary span.haddad-coupon-price .label,.summary span.haddad-coupon-price .desc,.mmqv-product-summary.summary span.haddad-coupon-price .label,.mmqv-product-summary.summary span.haddad-coupon-price .desc{margin:0}
+.product_list_widget span.haddad-coupon-price{-ms-flex-item-align:start;align-self:flex-start;margin:0;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}
+.single-lookbook span.haddad-coupon-price{display:block;margin-left:0;clear:both}
+span.haddad-coupon-price .amount-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline}
+span.haddad-coupon-price .amount-wrapper>span:not(:first-child){margin-left:5px}
+span.haddad-coupon-price .woocommerce-Price-amount{display:block;margin:0;color:#000;line-height:1.2}
+span.haddad-coupon-price .label,span.haddad-coupon-price .desc{color:#666;background:transparent;padding:2px 0;text-transform:uppercase;font-size:.6rem;opacity:.8;white-space:normal;line-height:1.4 !important;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;word-break:break-word}
+span.haddad-coupon-price .desc{font-size:9px;letter-spacing:.03em}
+span.haddad-coupon-price:not(:last-child) .desc{display:none}
+.woocommerce div.product .product_title{margin-bottom:10px !important}
+.woocommerce table.shop_table tr.cart-discount,.woocommerce table.shop_table tr.subtotal-applied-coupons{color:#86009b;font-size:110%}
+.woocommerce table.shop_table .product-subtotal s,.woocommerce table.shop_table .product-subtotal>s,.woocommerce table.shop_table .product-total s,.woocommerce table.shop_table .product-total>s{font-size:.95em;font-weight:normal;margin:0 !important;opacity:.7}
+.woocommerce table.shop_table .product-subtotal s,.woocommerce table.shop_table .product-subtotal>span,.woocommerce table.shop_table .product-total s,.woocommerce table.shop_table .product-total>span{line-height:1.4;margin:5px}
+.woocommerce table.shop_table .product-subtotal>span,.woocommerce table.shop_table .product-total>span{font-weight:bold}
+.woocommerce table.shop_table .product-subtotal .discount,.woocommerce table.shop_table .product-total .discount{position:relative;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
+.woocommerce table.shop_table .product-subtotal .coupon-code,.woocommerce table.shop_table .product-total .coupon-code{padding:1px 4px 0;border:1px solid #ddd;line-height:1.5;background:#fbf2e5;margin-right:4px;text-transform:uppercase;font-size:9px;font-weight:bold !important;border-radius:4px;opacity:.8;color:#333;letter-spacing:.03em}
+.single-product .woocommerce-breadcrumb,.single-product .single-product-payment-methods,.single-product .single-product-custom-note{clear:both;font-size:12px !important;text-transform:uppercase;letter-spacing:.03em;margin:1.3em 0}
+.skladista{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;font-size:12px}
+.skladista>span{background:#f5f5f5;padding:5px 8px;font-weight:bold}
+.skladista .lokacija{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
+.skladista .lokacija>*{padding:5px 8px;-webkit-box-flex:3;-ms-flex-positive:3;flex-grow:3;width:33%;margin:1px;background-color:#f5f5f5}
+.skladista .lokacija .naziv{min-width:150px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.skladista .lokacija .naziv:before{content:"";display:block;width:10px;height:10px;background-color:#666;border-radius:20px;margin-right:5px}
+.skladista .lokacija .naziv.dostupno:before{background-color:#2b0}
+.skladista .lokacija .naziv.zadnji:before{background-color:#ffd700}
+.skladista .lokacija .naziv.nedostupno:before{background-color:#cb2027}
+.skladista .lokacija .kolicina{max-width:80px;text-align:center;font-weight:bold}
+.skladista .lokacija .stanje{min-width:100px}
+.product-summary .ihwp-product-sharing{clear:both}
+.ihwp-product-sharing ul{margin-left:0;display:-webkit-box;display:-ms-flexbox;display:flex}
+.ihwp-product-sharing ul li{list-style:none;padding:3px 0;text-align:left;margin:0 !important}
+.ihwp-product-sharing ul li a:before{font-family:"FontAwesome";font-weight:400;margin-right:1em}
+.ihwp-product-sharing ul li.facebook a:before{content:"\f09a";background-color:#3b5998}
+.ihwp-product-sharing ul li.twitter a:before{content:"\f099";background-color:#00aced}
+.ihwp-product-sharing ul li.pinterest a:before{content:"\f231";background-color:#cb2027}
+.ihwp-product-sharing ul li.whatsapp a:before{content:"\f232";background-color:#25d366}
+.ihwp-product-sharing ul li.email a:before{content:"\f0e0";background-color:#333}
+.ihwp-product-sharing ul li a:before{font-size:17px}
+.ihwp-product-sharing ul li a,.ihwp-product-sharing ul li a:visited,.ihwp-product-sharing ul li a:active{color:#fff}
+.ihwp-product-sharing ul li a strong{clear:both;font-size:.72rem;letter-spacing:.03em;text-transform:uppercase;color:#333;line-height:1.4;display:inline-block;margin:5px 2px}
+.universal-sizes{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:0 20px;height:40px;border-radius:4px;background-color:#e8e8e8;font-weight:bold}
+.universal-sizes a{color:#666}
+body:not(.theme-flatsome) span.onsale{position:absolute;z-index:10;left:-10px;top:-10px;right:auto;-webkit-transform:none;transform:none;letter-spacing:0;font-size:20px;font-weight:bold;width:40px;height:40px}
+.lowest_price,.actual_price{display:inline-block;margin:.2em auto}
+.lowest_price .text,.actual_price .text{font-size:11px;text-transform:uppercase;display:block;margin:.4em auto;font-weight:bold;opacity:.8}
+.theme-haumea .lowest_price .text,.theme-haumea .actual_price .text{margin:0;line-height:1.1}
+.theme-haumea .summary .lowest_price .text,.theme-haumea .summary .actual_price .text{line-height:normal;margin-bottom:.2em}
+.lowest_price{opacity:.8}
+.lowest_price .lowest_amount{text-decoration:line-through}
+.actual_price{word-break:normal}
+.facetwp-template{-webkit-transition:opacity .5s linear;transition:opacity .5s linear}
+.facetwp-template.loading{opacity:.3}
+.facetwp-pager{text-align:center;margin-top:20px}
+.facetwp-type-checkboxes .facetwp-checkbox{display:block;border-bottom:1px solid #eaeaea;margin-bottom:0;text-indent:3px;padding-top:5px;padding-bottom:5px;position:relative}
+.facetwp-type-checkboxes .facetwp-checkbox .facetwp-counter{font-weight:normal;font-size:.7rem}
+.facetwp-type-checkboxes .facetwp-checkbox.checked{color:#b8a203;text-decoration:underline}
+.facetwp-type-checkboxes .facetwp-checkbox .fa:before{border-radius:10px;display:-webkit-box;display:-ms-flexbox;display:flex;text-align:center;line-height:1.3;margin:0;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-indent:1px}
+.facetwp-type-checkboxes .facetwp-checkbox .facetwp-expand{font-size:0}
+.facetwp-type-checkboxes .facetwp-checkbox .facetwp-expand:before{font-size:18px}
+.facetwp-type-checkboxes .facetwp-depth{margin-left:7px;border-left:1px solid #e5e5e5;padding-left:10px}
+.facetwp-reset-btn{display:none}
+body.theme-flatsome .image-icon{display:-webkit-box;display:-ms-flexbox;display:flex;margin:5px}
+body.theme-flatsome span.new-product{position:absolute;z-index:10;top:10px;right:10px;background:#9702bb;font-size:11px;font-weight:bold;text-transform:uppercase;color:#fff !important;padding:0;border-radius:100px;width:45px;height:45px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-shadow:1px 1px 0 rgba(0,0,0,0.3);-webkit-box-shadow:-2px 6px 8px 0 rgba(0,0,0,0.3);box-shadow:-2px 6px 8px 0 rgba(0,0,0,0.3)}
+span.ih-fabriq-logo{position:absolute;z-index:3;top:50%;left:0;-webkit-transform:translateY(-50%) translateX(-50%) rotate(-90deg) scale(0.8);transform:translateY(-50%) translateX(-50%) rotate(-90deg) scale(0.8);-webkit-transform-origin:top;transform-origin:top;width:40%;background:#f5f5f5;padding:0;border:0}
+span.ih-fabriq-logo img{background:#1a1a1a;padding:3px 8px}
+span.ih-fabriq-logo.ih{width:80%}
+span.ih-fabriq-logo .collection{text-transform:uppercase;font-size:12px;font-weight:bold;background-color:transparent}
+.products span.ih-fabriq-logo,.flickity-enabled span.ih-fabriq-logo{background:transparent}
+.single-product .summary span.ih-fabriq-logo,.mmqv-product-summary span.ih-fabriq-logo,.qv-holder span.ih-fabriq-logo{-webkit-transform:none;transform:none;top:auto;left:auto;position:relative;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;padding:0 10px}
+.single-product .summary span.ih-fabriq-logo img,.mmqv-product-summary span.ih-fabriq-logo img,.qv-holder span.ih-fabriq-logo img{padding:3px 8px;width:auto;margin:10px 8px;max-height:30px;border:0}
+.products .item .anim-wrap .item-img span.ih-fabriq-logo img{width:100% !important;height:auto;padding:5%}
+.single-product span.ih-fabriq-logo.ih img,.mmqv-product-summary span.ih-fabriq-logo img{width:170px}
+.mmqv-product-summary span.ih-fabriq-logo img{width:80px}
+.tablica-red{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;width:100%;margin-top:2px;font-size:14px !important}
+.tablica-red br{display:none}
+.tablica-red .tekst{display:block;width:100%}
+.tablica-red .tekst.opis{text-transform:uppercase;font-weight:bold;font-size:110%}
+.tablica-red .tekst.upute-naslov{font-style:italic;font-size:86%;margin-top:10px}
+.tablica-red .tekst.upute{font-size:86%;font-weight:bold}
+.tablica-red .glavni-stupci{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
+.tablica-red .glavni-stupci.stupac-jedan{width:30%}
+.tablica-red .glavni-stupci.stupac-dva{width:70%}
+.tablica-red .glavni-stupci .sub-opis{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:100%;background-color:#e5e5e5;padding:20px}
+.tablica-red .glavni-stupci .subovi{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-line-pack:stretch;align-content:stretch;-ms-flex-line-pack:center;align-content:center;height:100%;border-bottom:1px solid #e0e0e0}
+.tablica-red .glavni-stupci .subovi .velicine{padding:15px 10px;width:calc(100% / 8);background-color:#f1f1f1;margin-left:1px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.tablica-red .glavni-stupci .subovi .velicine.regija{font-weight:bold}
+.tablica-red .glavni-stupci .subovi .velicine.ovisno-o-modelu{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;width:100%;padding:20px}
+@media screen and (min-width:769px){span.haddad-coupon-price .desc.tip-top{background:url("../images/asterisk.svg") no-repeat center;background-size:auto;width:13px;height:13px;background-size:60%}
+.ihwp-product-sharing ul{margin:0}
+.ihwp-product-sharing ul::before,.ihwp-product-sharing ul::after{content:'';display:table}
+.ihwp-product-sharing ul::after{clear:both}
+.ihwp-product-sharing ul li{width:25%;float:left;text-align:center}
+.ihwp-product-sharing.is-mobile ul li{width:20%}
+.ihwp-product-sharing ul li:last-child{border-right:0}
+.ihwp-product-sharing ul li a:before{display:block;margin:0 auto .007em;font-size:17px;height:40px;line-height:2.2;-webkit-transition:all,ease,.2s;transition:all,ease,.2s}
+.ihwp-product-sharing ul li a:hover:before{-webkit-transform:translateY(-0.25em);transform:translateY(-0.25em)}
+.actual_price .actual_amount{line-height:1.4}
+}@media screen and (max-width:768px){.ihwp-product-sharing ul{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}
+.ihwp-product-sharing ul li a:before{width:40px;height:40px;display:inline-block;line-height:2.3;text-align:center}
+.tablica-red{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.tablica-red .glavni-stupci{width:100% !important}
+}@media screen and (max-width:767px){span.haddad-coupon-price .desc.tip-top{display:none}
+}@media screen and (max-width:480px){.tablica-red{width:auto}
+.tablica-red .glavni-stupci .subovi{font-size:11px}
+}@media screen and (max-width:74.9375em){.entry-summary span.haddad-coupon-price,.mmqv-product-summary.summary span.haddad-coupon-price{margin-right:0 !important}
+}

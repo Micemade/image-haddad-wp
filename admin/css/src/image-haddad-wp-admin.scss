@@ -1,0 +1,232 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+/* This plugin settings page */
+.toplevel_page_ihwp_settings {
+	
+	.metabox-holder {
+		h2 {
+			font-size: 1.6em
+		}
+		.group {
+			padding-right: 150px;
+		}
+		.submit-wrapper {
+			padding: 15px;
+			display: flex;
+			align-items: center;
+			position: fixed;
+			bottom: 0;
+			right: 10px;
+			width: calc( 100% - 190px);
+			justify-content: flex-end;
+			background: rgba(255, 255, 255, 0.7);
+			padding-bottom: 40px;
+		}
+	}
+
+	.form-table {
+		margin-bottom: 30px;
+		h3 {
+			margin: 0;
+		}
+	}
+
+	#ihwp_doc .inside,
+	#ihwp_log .inside,
+	#ihwp_log_db .inside {
+
+		.container {
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			align-items: stretch;
+			padding: 10px;
+			background: #fff;
+			margin-bottom: 2px;
+			flex-wrap: wrap;
+
+			h4, p {
+				margin: 0.5em 0;
+			}
+			h4 {
+				font-weight: bold;
+			}
+			> div {
+				flex-grow: 1;
+				padding: 10px;
+				&.title {
+					width: 20%;
+				}
+				&.desc {
+					width: 60%;
+					border-left: 1px solid #e6e6e6;
+				}
+				&.scope {
+					width: 10%;
+					border-left: 1px solid #e6e6e6;
+					text-align: center;
+				}
+				&.equal-width {
+					width: 10%;
+					border-left: 1px solid #e6e6e6;
+					padding: 0 10px;
+					&:first-child {
+						border: none;
+					}
+				}
+
+				.del-entry, .del-json {
+					position: absolute;
+					right: -10px;
+					border-radius: 20px;
+					border: 0;
+					padding-bottom: 3px;
+					width: 24px;
+					height: 24px;
+					font-size: 15px;
+					font-weight: bold;
+					background: #ff6565;
+					color: white;
+					line-height: 0;
+					box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+					transform: scale(85%);
+					&:hover {
+						cursor: pointer;
+						background: #bb0000;
+					}
+				}
+				.enum {
+					position: absolute;
+					left: -10px;
+					background: #fff;
+					display: block;
+					width: 20px;
+					height: 20px;
+					text-align: center;
+					border-radius: 20px;
+					font-size: 10px;
+					line-height: 2;
+					border: 1px solid #dbdbdb;
+				}
+			}
+			&.light {
+				opacity: 0.7;
+				> div {
+					padding: 3px 10px;
+				}
+				h4, p {
+					margin: 0;
+					font-style: italic;
+				}
+			}
+			small {
+				color: #4974f7;
+			}
+			// Container.pagination
+			&.pagination {
+				> div {
+					text-align: center;
+					flex-grow: unset;
+					width: 30px;
+					
+					a {
+						display: inline-block;
+						width: 30px;
+						height: 20px;
+					}
+
+					&.current {
+						background: #f2f2f2;
+						a {
+							text-decoration: none;
+							color: #999;
+							pointer-events: none;
+							cursor: pointer;
+						}
+					}// .current
+				} // > div
+				
+			}// .pagination
+
+		}
+	}
+}
+code {
+	font-family: Consolas,"courier new";
+	color: crimson;
+	background-color: #f1f1f1;
+	padding: 2px;
+}
+
+
+/* Make "New orders" filter link (in WC Orders page) stand out */
+.subsubsub li.wc-new-order .new-orders-wrap {
+	padding: 5px 10px;
+	background: #bf9dff;
+	color: #3e266d;
+	a {
+		color: #3e266d;
+		text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+	}
+}
+
+/* Custom order statuses badges */
+.order-status {
+	&.status-new-order {
+		color: #3e266d;
+		background: #bf9dff;
+	}
+	&.status-caution {
+		color: #fff;
+		background: #bb0000;
+	}
+	&.status-creation {
+		color: #fff;
+		background: #036600;
+	}
+}
+
+/* Coupoon edit page - HTML in side meta box */
+#haddad_coupon_price_cache .woocommerce_options_panel.coupon-cache {
+	background-color: #ede4ff;
+	padding: 20px;
+	padding-top: 15px;
+	margin-top: 10px;
+	font-size: 110%;
+}
+
+#woocommerce-coupon-data ul.wc-tabs li.haddad_coupon_data_options a::before,
+#woocommerce-product-data ul.wc-tabs li.haddad_coupon_data_options a::before,
+.woocommerce ul.wc-tabs li.haddad_coupon_data_options a::before {
+	font-family: WooCommerce;
+	content: "\e008";
+}
+
+
+.woocommerce_options_panel p.form-field {
+	&.removed-upsells-notice {
+		margin: 0;
+		padding: 20px 20px !important;
+		background-color: #ffc5c5;
+		font-weight: bold;
+		font-size: 13px;
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.toplevel_page_ihwp_settings .metabox-holder .submit-wrapper {
+		position: relative;
+		width: auto;
+		bottom: auto;
+		right: auto;
+		padding: 15px;
+		justify-content: flex-start;
+	}
+	.toplevel_page_ihwp_settings .metabox-holder .group {
+		padding-right: inherit;
+	}
+}

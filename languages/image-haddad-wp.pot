@@ -1,0 +1,598 @@
+# Copyright (C) 2022 Image Haddad WP
+# This file is distributed under the same license as the Image Haddad WP package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Image Haddad WP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Alen Širola <alen@micemade.com>\n"
+"Last-Translator: Alen Širola <alen@micemade.com>\n"
+"POT-Creation-Date: 2022-08-02 11:21+0000\n"
+"Report-Msgid-Bugs-To: https://micemade/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: admin/class-image-haddad-wp-admin.php:177
+msgid "<a href=\"%s\">Settings</a>"
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:261
+msgid "New Orders"
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:265
+msgid "In creation"
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:282, public/class-image-haddad-wp-public.php:832
+msgctxt "Order status"
+msgid "New Order"
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:283, public/class-image-haddad-wp-public.php:841
+msgctxt "Order status"
+msgid "Caution!"
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:284, public/class-image-haddad-wp-public.php:850
+msgctxt "Order status"
+msgid "In creation"
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:296
+msgid "Change status to \"New order\""
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:297
+msgid "Change status to \"Caution!\""
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:298
+msgid "Change status to \"In creation\""
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:299
+msgid "Change status to \"Processing\""
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:349
+msgid "Custom: Resend order confirmation to customer"
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:403
+msgid "Upsell product are temporarily hidden on frontend via \"Image Haddad WP\" plugin. "
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:404
+msgid "To enable upsells visibility on frontend, please go to \"Image Haddad WP\" plugin settings, tab \"WooCommerce\" and re-enable the upsells."
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:515, admin/class-image-haddad-wp-admin.php:516
+msgid "Order products"
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:576
+msgid "Haddad settings"
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:598
+msgid "Coupon prices on products"
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:599
+msgid "Show discounted price under regular prices, with coupon code label."
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:613
+msgid "Coupon background color"
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:623
+msgid "Coupon font color"
+msgstr ""
+
+#. translators: The (%s) placeholder is for the coupon code.
+#: admin/class-image-haddad-wp-admin.php:679
+msgid "Coupon code"
+msgid_plural "%s coupon codes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-image-haddad-wp-admin.php:1008
+msgid "No direct files access type allowed."
+msgstr ""
+
+#: admin/class-image-haddad-wp-admin.php:999
+msgid "Cannot write to JSON file."
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:384
+msgid "Related products"
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:393
+msgid "You may also like&hellip;"
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:414
+msgid "Thank you for your order. Order confirmation has been sent to tour email address, and the additional reciept will be sent once the parcel will be sent for delivery."
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:618
+msgid "Number of Cross-sell products"
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:627
+msgid "Cross-sell products appear on cart page.<br>Setting added by \"Image Haddad WP\" plugin"
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:636
+msgid "Cross-sell product columns"
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:645
+msgid "Cross-sell product columns.<br>Setting added by \"Image Haddad WP\" plugin"
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:766
+msgid "New!"
+msgstr ""
+
+#. translators: The (%s) placeholder is for the orders count.
+#: public/class-image-haddad-wp-public.php:838
+msgid "New Order <span class=\"count\">(%s)</span>"
+msgid_plural "New Orders <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: The (%s) placeholder is for the orders count.
+#: public/class-image-haddad-wp-public.php:847
+msgid "Caution! <span class=\"count\">(%s)</span>"
+msgid_plural "Caution! <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: The (%s) placeholder is for the orders count.
+#: public/class-image-haddad-wp-public.php:856
+msgid "In creation <span class=\"count\">(%s)</span>"
+msgid_plural "In creation <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: public/class-image-haddad-wp-public.php:1093
+msgid "Perhaps you would be interested in our sale products: "
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:1124
+msgid "No sale products found"
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:1334, public/class-image-haddad-wp-public.php:1605
+msgid "Coupon: "
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:1554
+msgid "Discount is applied in the cart"
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:1725
+msgid "Subtotal with discount"
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:1747
+msgid "Order cancelled"
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:1748
+msgid "Your order created on {order_date} at {site_title} webshop was cancelled"
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:1846
+msgid "Collection: "
+msgstr ""
+
+#: public/class-image-haddad-wp-public.php:2072
+msgid "Also recommended"
+msgstr ""
+
+#: admin/settings/log_products_draft_publish_db.php:60
+msgid "database"
+msgstr ""
+
+#: admin/settings/log_products_draft_publish_json.php:115
+msgid "JSON file"
+msgstr ""
+
+#: admin/settings/log_products_draft_publish_json.php:278
+msgid "Logging product changes in"
+msgstr ""
+
+#: admin/settings/log_products_draft_publish_json.php:278
+msgid "is currently not active. Product changes will not be logged until enabled again."
+msgstr ""
+
+#: admin/settings/settings-init.php:117
+msgid "WooCommerce Basic"
+msgstr ""
+
+#: admin/settings/settings-init.php:126
+msgid "WooCommerce Other"
+msgstr ""
+
+#: admin/settings/settings-init.php:135
+msgid "Custom CSS"
+msgstr ""
+
+#: admin/settings/settings-init.php:144
+msgid "Other Settings"
+msgstr ""
+
+#: admin/settings/settings-init.php:154
+msgid "Log WP JSON"
+msgstr ""
+
+#: admin/settings/settings-init.php:166
+msgid "Log DB"
+msgstr ""
+
+#: admin/settings/settings-init.php:178
+msgid "Documentation"
+msgstr ""
+
+#: admin/settings/settings-init.php:192
+msgid "Change in this setting will require a page reload."
+msgstr ""
+
+#: admin/settings/settings-init.php:193
+msgid "Disabled logging will produce gaps in logged records (if products are updated after disabling this option)."
+msgstr ""
+
+#: admin/settings/settings-init.php:193
+msgid "Once enabled, will start logging only from the moment enabled."
+msgstr ""
+
+#: admin/settings/settings-init.php:209
+msgid "Enable Custom Google Analytics"
+msgstr ""
+
+#: admin/settings/settings-init.php:210
+msgid "Custom GA is added in code. Disable this if you add GA plugin, such as \"WooCommerce Google Analytics\""
+msgstr ""
+
+#: admin/settings/settings-init.php:221
+msgid "Enable Custom Google Tag Manager"
+msgstr ""
+
+#: admin/settings/settings-init.php:222
+msgid "Custom GTM is added in code."
+msgstr ""
+
+#: admin/settings/settings-init.php:242
+msgid "Disable product reviews"
+msgstr ""
+
+#: admin/settings/settings-init.php:243
+msgid "no product reviews on this shop ..."
+msgstr ""
+
+#: admin/settings/settings-init.php:254
+msgid "Disable coupon prices cache"
+msgstr ""
+
+#: admin/settings/settings-init.php:255
+msgid "if you experience issues with coupon prices in catalog/categories (products in loop), activate this temporarily.<br>Don't. forget to deactivate this after you confirm correct coupon prices display."
+msgstr ""
+
+#: admin/settings/settings-init.php:265
+msgid "Label on coupon prices"
+msgstr ""
+
+#: admin/settings/settings-init.php:267
+msgid "No label"
+msgstr ""
+
+#: admin/settings/settings-init.php:268
+msgid "Coupon: [couponcode]"
+msgstr ""
+
+#: admin/settings/settings-init.php:269
+msgid "Custom label"
+msgstr ""
+
+#: admin/settings/settings-init.php:281
+msgid "Coupon price custom label"
+msgstr ""
+
+#: admin/settings/settings-init.php:282
+msgid "Special discount price"
+msgstr ""
+
+#: admin/settings/settings-init.php:283
+msgid "Enter your custom text here."
+msgstr ""
+
+#: admin/settings/settings-init.php:293
+msgid "Terms and conditions PDF"
+msgstr ""
+
+#: admin/settings/settings-init.php:294
+msgid "Upload or choose a PDF file for terms and conditions. PDF with terms and conditions will be attached to order emails."
+msgstr ""
+
+#: admin/settings/settings-init.php:296
+msgid "Choose file"
+msgstr ""
+
+#: admin/settings/settings-init.php:307
+msgid "Fabriq Logo"
+msgstr ""
+
+#: admin/settings/settings-init.php:308
+msgid "Fabriq logo placement is theme dependent.. Fabriq logo is used for products in \"Fabriq\" category. In case of theme change contact developer"
+msgstr ""
+
+#: admin/settings/settings-init.php:310, admin/settings/settings-init.php:324
+msgid "Choose image"
+msgstr ""
+
+#: admin/settings/settings-init.php:321
+msgid "Image Haddad Logo"
+msgstr ""
+
+#: admin/settings/settings-init.php:322
+msgid "Image Haddad logo placement is theme dependent. Image Haddad logo is used for all products NOT in \"Fabriq\" category. In case of theme change contact developer. "
+msgstr ""
+
+#: admin/settings/settings-init.php:338
+msgid "Sale price font color"
+msgstr ""
+
+#: admin/settings/settings-init.php:339, admin/settings/settings-init.php:350
+msgid "applies in catalog and single product."
+msgstr ""
+
+#: admin/settings/settings-init.php:349
+msgid "Sale price back color"
+msgstr ""
+
+#: admin/settings/settings-init.php:369
+msgid "Single product settings"
+msgstr ""
+
+#: admin/settings/settings-init.php:378
+msgid "Custom content on single product 1"
+msgstr ""
+
+#: admin/settings/settings-init.php:379, admin/settings/settings-init.php:401
+msgid "Displayed in product summary"
+msgstr ""
+
+#: admin/settings/settings-init.php:387
+msgid "Priority for Custom content 1"
+msgstr ""
+
+#: admin/settings/settings-init.php:388, admin/settings/settings-init.php:410
+msgid "Priority sets the element place in product summmary."
+msgstr ""
+
+#: admin/settings/settings-init.php:400
+msgid "Custom content on single product 2"
+msgstr ""
+
+#: admin/settings/settings-init.php:409
+msgid "Priority for Custom content 2"
+msgstr ""
+
+#: admin/settings/settings-init.php:417
+msgid "None"
+msgstr ""
+
+#: admin/settings/settings-init.php:418
+msgid "From this plugin"
+msgstr ""
+
+#: admin/settings/settings-init.php:429
+msgid "Social sharing icons"
+msgstr ""
+
+#: admin/settings/settings-init.php:441
+msgid "Hide upsell products."
+msgstr ""
+
+#: admin/settings/settings-init.php:442
+msgid "Upsell products are added manually on singular products."
+msgstr ""
+
+#: admin/settings/settings-init.php:461
+msgid "Cart/Checkout settings"
+msgstr ""
+
+#: admin/settings/settings-init.php:470
+msgid "Order received text"
+msgstr ""
+
+#: admin/settings/settings-init.php:471
+msgid "Custom text on \"order/received\" page. If empty, default text will be used."
+msgstr ""
+
+#: admin/settings/settings-init.php:481
+msgid "Hide coupon field on checkout"
+msgstr ""
+
+#: admin/settings/settings-init.php:482
+msgid "to show coupon on checkout, uncheck this."
+msgstr ""
+
+#: admin/settings/settings-init.php:501
+msgid "Widgets and other."
+msgstr ""
+
+#: admin/settings/settings-init.php:510
+msgid "Exclude categories from product category widget."
+msgstr ""
+
+#: admin/settings/settings-init.php:511
+msgid "Use category slugs. Add each product category in new line"
+msgstr ""
+
+#: admin/settings/settings-init.php:526
+msgid "Custom CSS - all screens"
+msgstr ""
+
+#: admin/settings/settings-init.php:527
+msgid "add custom CSS code which will apply to all screen resolutions."
+msgstr ""
+
+#: admin/settings/settings-init.php:535
+msgid "Custom CSS - tablet"
+msgstr ""
+
+#: admin/settings/settings-init.php:536
+msgid "add custom CSS for max. tablet screen sizes."
+msgstr ""
+
+#: admin/settings/settings-init.php:544
+msgid "Custom CSS - mobile"
+msgstr ""
+
+#: admin/settings/settings-init.php:545
+msgid "add custom CSS for max. mobile screen sizes."
+msgstr ""
+
+#: admin/settings/settings-init.php:561
+msgid "Sticker note"
+msgstr ""
+
+#: admin/settings/settings-init.php:562
+msgid "A note in sticker bar - Haumea theme."
+msgstr ""
+
+#: admin/settings/settings-init.php:573
+msgid "Display languages"
+msgstr ""
+
+#: admin/settings/settings-init.php:574
+msgid "Show languages selection element in header."
+msgstr ""
+
+#: admin/settings/settings-init.php:586
+msgid "Temporary hide non HR pages from SE robots"
+msgstr ""
+
+#: admin/settings/settings-init.php:587
+msgid "Uncheck this when site is mutlingual"
+msgstr ""
+
+#: admin/settings/settings-init.php:598
+msgid "Remove comments support"
+msgstr ""
+
+#: admin/settings/settings-init.php:599
+msgid "this disables default comments support (posts, pages)"
+msgstr ""
+
+#: admin/settings/settings-init.php:618
+msgid "Admin logs settings"
+msgstr ""
+
+#: admin/settings/settings-init.php:629
+msgid "Enable logging product changes (JSON)"
+msgstr ""
+
+#: admin/settings/settings-init.php:630
+msgid "products changes are logged in JSON file (when product status changes from draft to publish)."
+msgstr ""
+
+#: admin/settings/settings-init.php:641
+msgid "Show log (JSON)"
+msgstr ""
+
+#: admin/settings/settings-init.php:642
+msgid "will display JSON file logged changes in products (when product status changes from draft to publish)."
+msgstr ""
+
+#: admin/settings/settings-init.php:664
+msgid "Enable log product changes (DB)"
+msgstr ""
+
+#: admin/settings/settings-init.php:665
+msgid "products changes are logged in database (when product status changes from draft to publish)."
+msgstr ""
+
+#: admin/settings/settings-init.php:676
+msgid "Show log (DB)"
+msgstr ""
+
+#: admin/settings/settings-init.php:677
+msgid "will display database logged changes in products (when product status changes from draft to publish)."
+msgstr ""
+
+#: admin/settings/settings-init.php:696
+msgid "Logged items per page"
+msgstr ""
+
+#: admin/settings/settings-init.php:697
+msgid "How many logged product changes will be shown on one page of logs (applies to both JSON and DB logs)."
+msgstr ""
+
+#: admin/settings/wp-osa/class-wp-osa.php:597
+msgid "Choose File"
+msgstr ""
+
+#: admin/settings/wp-osa/class-wp-osa.php:616
+msgid "Choose Image"
+msgstr ""
+
+#: admin/settings/wp-osa/class-wp-osa.php:916
+msgid "Saving data."
+msgstr ""
+
+#: admin/settings/wp-osa/class-wp-osa.php:923
+msgid "Settings saved."
+msgstr ""
+
+#: admin/settings/wp-osa/class-wp-osa.php:927
+msgid "Error saving changes. Please contact your administrator."
+msgstr ""
+
+#: admin/settings/wp-osa/class-wp-osa.php:936
+msgid "Form changed!"
+msgstr ""
+
+#: admin/settings/wp-osa/class-wp-osa.php:941
+msgid "Settings have been changed and will be automatically saved."
+msgstr ""
+
+#: admin/settings/wp-osa/class-wp-osa.php:947
+msgid "Settings still changed and not saved"
+msgstr ""
+
+#: public/woocommerce/cart/cart-totals.php:25
+msgid "Cart totals"
+msgstr ""
+
+#: public/woocommerce/cart/cart-totals.php:30, public/woocommerce/cart/cart-totals.php:31
+msgid "Subtotal"
+msgstr ""
+
+#: public/woocommerce/cart/cart-totals.php:57, public/woocommerce/cart/cart-totals.php:58
+msgid "Shipping"
+msgstr ""
+
+#. translators: %s location.
+#: public/woocommerce/cart/cart-totals.php:77
+msgid "(estimated for %s)"
+msgstr ""
+
+#: public/woocommerce/cart/cart-totals.php:103, public/woocommerce/cart/cart-totals.php:104
+msgid "Total"
+msgstr ""
+
+#: public/woocommerce/cart/cross-sells.php:27
+msgid "You may be interested in&hellip;"
+msgstr ""

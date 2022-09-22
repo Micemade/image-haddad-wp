@@ -1,0 +1,727 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+/* ======= KATALOG - kategorije ======== */
+/*  Prikaz subkategorija na vrhu stranice kategorija  */
+ul.product-sub-categories {
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: wrap;
+	text-align: center;
+	font-size: 13px;
+	letter-spacing: 0.03em;
+	margin: 0;
+	margin-bottom: 2em;
+	li {
+		border: 1px solid #ffffff;
+		border-top: none;
+		margin-left: -1px;
+
+		a {
+			padding: 5px 10px;
+			background: #e5e5e5;
+			&:hover {
+				background: #f6f6f6;
+			}
+		}
+	}
+}
+
+/* ======= Prikaz cijene sa kuponom ======== */
+ul.products li.product .price.coupon,
+.single-product .price.coupon > .woocommerce-Price-amount {
+	font-size: 85%;
+	margin-top: -8px;
+	opacity: 0.8;
+}
+
+// "MX WooCommerce HRK + EUR" plugin dual cijena.
+.woocommerce-Price-amount.amount-eur {
+	font-size: 0.9em;
+	opacity: 0.6;
+}
+
+.haddad-coupons {
+	display: flex;
+	flex-direction: column;
+	.entry-summary &,
+	.summary &,
+	.mmqv-product-summary.summary & {
+		margin-bottom: 1.3em;
+	}
+}
+
+span.haddad-coupon-price {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: auto !important;
+	font-weight: bold !important;
+	margin: 0;
+	margin-top: 10px;
+	padding: 5px;
+	background:beige;
+	align-self: center;
+	font-size: 110%;
+
+	// Singles (single product, quick view, Micemade Elements plugin quick view [mmqv]).
+	.entry-summary &,
+	.summary &,
+	.mmqv-product-summary.summary & {
+		display: block;
+		padding: 5px 15px 10px 15px;
+		line-height: 0;
+		margin-left: 0;
+		margin-right: 50%;
+		align-self: flex-start;
+
+		.label, .desc {
+			margin: 0;
+		}
+	}
+
+	// Samo na WC products widgetu 
+	.product_list_widget & {
+		align-self: flex-start;
+		margin: 0;
+		align-items: flex-start;
+	}
+
+	// Samo na single lookbooku
+	.single-lookbook & {
+		display: block;
+		margin-left: 0;
+		clear: both;
+	}
+
+	.amount-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		> span:not(:first-child) {
+			margin-left: 5px;
+		}
+	}
+	.woocommerce-Price-amount {
+		display: block;
+		margin: 0;
+		color: #000;
+		line-height: 1.2;
+	}
+
+	.label, .desc {
+		color: #666;
+		background: transparent;
+		padding: 2px 0;
+		text-transform: uppercase;
+		font-size: 0.6rem;
+		opacity: 0.8;
+		white-space: normal;
+		line-height: 1.4!important;
+		display: inline-flex;
+		word-break: break-word;
+	}
+	.desc {
+		font-size: 9px;
+		letter-spacing: 0.03em;
+	}
+
+	// Ako ima vise kupona za prikaz, prikazati samo zadnji desc.
+	&:not(:last-child) .desc {
+		display: none;
+	}
+
+}
+
+// Tablet up.
+@media screen and (min-width: 769px) {
+	span.haddad-coupon-price .desc.tip-top {
+		background: url('../images/asterisk.svg') no-repeat center;
+		background-size: auto;
+		width: 13px;
+		height: 13px;
+		background-size: 60%;
+	}
+
+}
+// Tablet and down.
+@media screen and (max-width: 767px) {
+	span.haddad-coupon-price .desc.tip-top {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 74.9375em) {
+	// Singles (single product, quick view, mm elements plugin quick view).
+	span.haddad-coupon-price {
+		.entry-summary &,
+		.mmqv-product-summary.summary & {
+			margin-right: 0 !important;
+		}
+	}
+}
+
+
+.woocommerce div.product .product_title {
+	margin-bottom: 10px!important;
+}
+/* ======== kraj Prikaz cijene sa kuponom  ======= */
+
+
+/* ======== Dodatni red u cart totalu i checkout review order tabeli ======= */
+.woocommerce table.shop_table tr.cart-discount,
+.woocommerce table.shop_table tr.subtotal-applied-coupons {
+	color: #86009b;
+	font-size: 110%;
+}
+/* ======== kraj dodatni red. ======== */
+
+/* ======== Kuponske cijene na kosarici, po proizvodu. ======== */
+.woocommerce table.shop_table .product-subtotal,
+.woocommerce table.shop_table .product-total {
+	s, > s {
+		font-size: 0.95em;
+		font-weight: normal;
+		margin: 0px !important;
+		opacity: 0.7;
+	}
+	s, > span {
+		line-height: 1.4;
+		margin: 5px;
+	}
+	> span {
+		font-weight: bold;
+	}
+	.discount {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		width: 100%;
+		justify-content: flex-end;
+	}
+
+	.coupon-code {
+		padding: 1px 4px 0px;
+		border: 1px solid #ddd;
+		line-height: 1.5;
+		background: #fbf2e5;
+		margin-right: 4px;
+		text-transform: uppercase;
+		font-size: 9px;
+		font-weight: bold !important;
+		border-radius: 4px;
+		opacity: 0.8;
+		color: #333;
+		letter-spacing: 0.03em;
+	}
+
+}
+/* ======== kraj kuponskih cijena ======== */
+
+
+/* ======== SINGLE PRODUCT STILOVI ======== */
+.single-product {
+	.woocommerce-breadcrumb,
+	.single-product-payment-methods, 
+	.single-product-custom-note {
+		clear: both;
+		font-size: 12px !important; // override Flatsome wc
+		text-transform: uppercase;
+		letter-spacing: 0.03em;
+		margin: 1.3em 0;
+	}
+	
+}
+
+.skladista {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-size: 12px;
+
+	> span {
+		background: #f5f5f5;
+		padding: 5px 8px;
+		font-weight: bold;
+	}
+
+	.lokacija {
+		display: flex;
+		align-items: stretch;
+
+		> * {
+			padding: 5px 8px;
+			flex-grow: 3;
+			width: 33%;
+			margin: 1px;
+			background-color: #f5f5f5;
+		}
+		.naziv {
+			min-width: 150px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			&:before {
+				content: "";
+				display: block;
+				width: 10px;
+				height: 10px;
+				background-color: #666;
+				border-radius: 20px;
+				margin-right: 5px;
+			}
+			&.dostupno:before { background-color: #22bb00;}
+			&.zadnji:before { background-color: #ffd700}
+			&.nedostupno:before { background-color: #cb2027;}
+		}
+		
+		.kolicina {
+			max-width: 80px;
+			text-align: center;
+			font-weight: bold;
+		}
+		.stanje {
+			min-width:100px
+		}
+	}
+	
+}
+
+
+/* ======== Sharing single proizvoda na social mrezama ======== */
+.product-summary .ihwp-product-sharing { clear: both; }
+	.ihwp-product-sharing ul {
+		margin-left: 0;
+		display: flex;
+	}
+		.ihwp-product-sharing ul li {
+			list-style: none;
+			padding: 3px 0;
+			text-align: left;
+			margin: 0!important;
+		}
+		.ihwp-product-sharing ul li a:before {
+			font-family: "FontAwesome";
+			font-weight: 400;
+			margin-right: 1em;
+		}
+		.ihwp-product-sharing ul li.facebook a:before {
+			content: "\f09a";
+			background-color: #3b5998;
+		}
+		.ihwp-product-sharing ul li.twitter a:before {
+			content: "\f099";
+			background-color: #00aced;
+		}
+		.ihwp-product-sharing ul li.pinterest a:before {
+			content: "\f231";
+			background-color: #cb2027;
+		}
+		.ihwp-product-sharing ul li.whatsapp a:before {
+			content: "\f232";
+			background-color: #25D366;
+		}
+		.ihwp-product-sharing ul li.email a:before {
+			content: "\f0e0";
+			background-color: #333;
+		}
+
+		.ihwp-product-sharing ul li a:before {
+			font-size: 17px;
+		}
+		.ihwp-product-sharing ul li a,
+		.ihwp-product-sharing ul li a:visited,
+		.ihwp-product-sharing ul li a:active {
+			color: #fff; 
+		}
+		.ihwp-product-sharing ul li a strong {
+			clear: both;
+			font-size: 0.72rem;
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+			color: #333;
+			line-height: 1.4;
+			display: inline-block;
+			margin: 5px 2px;
+		}
+
+	@media screen and (max-width: 768px) {
+		.ihwp-product-sharing ul {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		
+		.ihwp-product-sharing ul li a:before {
+			width: 40px;
+			height: 40px;
+			display: inline-block;
+			line-height: 2.3;
+			text-align: center;
+		}
+	}
+	@media screen and (min-width: 769px) {
+
+		.ihwp-product-sharing ul { margin: 0; }
+		.ihwp-product-sharing ul::before, .ihwp-product-sharing ul::after {
+			content: '';
+			display: table;
+		}
+		.ihwp-product-sharing ul::after { clear: both; }
+		.ihwp-product-sharing ul li {
+			width: 25%;
+			float: left;
+			text-align: center;
+		}
+		.ihwp-product-sharing.is-mobile ul li { width: 20% }
+			
+		.ihwp-product-sharing ul li:last-child {
+			border-right: 0; 
+		}
+		.ihwp-product-sharing ul li a:before {
+			display: block;
+			margin: 0 auto .007em;
+			font-size: 17px;
+			height: 40px;
+			line-height: 2.2;
+			transition: all, ease, .2s;
+		}
+		.ihwp-product-sharing ul li a:hover:before {
+			transform: translateY(-0.25em);
+		}
+	}
+
+/* Univerzalne velicine badge */
+.universal-sizes {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+	height: 40px;
+	border-radius: 4px;
+	background-color: #e8e8e8;
+	font-weight: bold;
+
+	a {
+		color: #666;
+	}
+}
+
+/* Obavijest - Popust */
+body:not(.theme-flatsome) span.onsale {
+	position: absolute;
+	z-index: 10;
+	left: -10px;
+	top: -10px;
+	right: auto;
+	transform: none;
+	letter-spacing: 0;
+	font-size: 20px;
+	font-weight: bold;
+	width: 40px;
+	height: 40px;
+}
+
+/**
+ * WooCommerce lowest price plugin
+ */
+.lowest_price, .actual_price {
+	display: inline-block;
+	margin: 0.2em auto;
+
+	.text {
+		font-size: 11px;
+		text-transform: uppercase;
+		display: block;
+		margin: 0.4em auto;
+		font-weight: bold;
+		opacity: 0.8;
+		.theme-haumea & {
+			margin: 0;
+			line-height: 1.1;
+		}
+		.theme-haumea .summary & {
+			line-height: normal;
+			margin-bottom: 0.2em;
+		}
+	}
+}
+.lowest_price {
+	opacity: 0.8;
+	.lowest_amount {
+		text-decoration:line-through;
+	}
+}
+.actual_price {
+	word-break: normal;
+}
+
+@media screen and (min-width: 769px) {
+	.actual_price .actual_amount {
+		line-height: 1.4;
+	}
+}
+
+
+/**
+ * FACETWP plugin
+ */
+.facetwp-template {
+	transition: opacity 0.5s linear;
+	&.loading {
+		opacity: 0.3;
+	}
+}
+
+/* Paginacija */
+.facetwp-pager {
+	text-align: center;
+	margin-top: 20px;
+}
+/* Checkboxevi */
+.facetwp-type-checkboxes .facetwp-checkbox {
+	display: block;
+	border-bottom: 1px solid #eaeaea;
+	margin-bottom: 0;
+	text-indent: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: relative;
+}
+	.facetwp-type-checkboxes .facetwp-checkbox .facetwp-counter {
+		font-weight: normal;
+		font-size: 0.7rem;
+	}
+	.facetwp-type-checkboxes .facetwp-checkbox.checked {
+		color: rgb(184, 162, 3);
+		text-decoration: underline;
+	}
+	.facetwp-type-checkboxes .facetwp-checkbox .fa:before {
+		border-radius: 10px;
+		display: flex;
+		text-align: center;
+		line-height: 1.3;
+		margin: 0;
+		align-items: center;
+		justify-content: center;
+		text-indent: 1px;
+	}
+	.facetwp-type-checkboxes .facetwp-checkbox .facetwp-expand {
+		font-size: 0;
+	}
+	.facetwp-type-checkboxes .facetwp-checkbox .facetwp-expand:before {
+		font-size: 18px;
+	}
+	.facetwp-type-checkboxes .facetwp-depth {
+		margin-left: 7px;
+		border-left: 1px solid #e5e5e5;
+		padding-left: 10px;
+	}
+
+.facetwp-reset-btn {
+	display: none;
+}
+
+/**************************/
+/** FLATSOME THEME TWEAKS */
+/**************************/
+/* Language icons in header (if Polylang or WPML) */
+body.theme-flatsome .image-icon {
+	display: flex;
+	margin: 5px;
+}
+/* Obavijest - Novo */
+body.theme-flatsome span.new-product {
+	position: absolute;
+	z-index: 10;
+	top: 10px;
+	right: 10px;
+	background: #9702bb;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff !important;
+	padding: 0;
+	border-radius: 100px;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+	box-shadow: -2px 6px 8px 0 rgba(0,0,0,0.3);
+}
+
+/* ----------- Fabriq logo ------------ */
+span.ih-fabriq-logo {
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%) translateX(-50%) rotate(-90deg) scale(0.8);
+	transform-origin: top;
+	width: 40%;
+	background: #f5f5f5;
+	padding: 0;
+	border: 0;
+	
+	img {
+		background: #1a1a1a;
+		padding: 3px 8px;
+	}
+	&.ih {
+		width: 80%;
+	}
+
+	.collection {
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: bold;
+		background-color: transparent;
+	}
+
+	.products &, .flickity-enabled & {
+		background: transparent;
+	}
+
+	// Single product.
+	.single-product .summary &,
+	.mmqv-product-summary &,
+	.qv-holder & {
+		transform: none;
+		top: auto;
+		left: auto;
+		position: relative;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 0 10px;
+		
+		img {
+			padding: 3px 8px;
+			width: auto;
+			margin: 10px 8px;
+			max-height: 30px;
+			border: 0;
+		}
+
+	}
+}
+
+// Haumea theme.
+.products .item .anim-wrap .item-img span.ih-fabriq-logo img {
+	width: 100% !important;
+	height: auto;
+	padding: 5%;
+}
+
+.single-product span.ih-fabriq-logo.ih img,
+.mmqv-product-summary span.ih-fabriq-logo img {
+	width: 170px;
+}
+.mmqv-product-summary span.ih-fabriq-logo img { width: 80px; }
+
+/* ------------------------------------------------------------------------ */
+/* Tabela veličina - HTML "tablica" u stranici Velicine (flex div elementi) */
+/* ------------------------------------------------------------------------ */
+.tablica-red {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-top: 2px;
+	font-size: 14px !important;
+	
+	br {
+		display: none; 
+	}
+	.tekst {
+		display: block;
+		width: 100%; 
+	}
+	.tekst.opis {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 110%;
+	}
+	.tekst.upute-naslov {
+		font-style: italic;
+		font-size: 86%;
+		margin-top: 10px;
+	}
+	.tekst.upute {
+		font-size: 86%;
+		font-weight: bold;
+	}
+	.glavni-stupci {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		
+		&.stupac-jedan {
+			width: 30%; 
+		}
+		&.stupac-dva {
+			width: 70%;
+		}
+		.sub-opis {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 100%;
+			background-color: #e5e5e5;
+			padding: 20px;
+		}
+		.subovi {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-content: stretch;
+			align-content: center;
+			height: 100%;
+			border-bottom: 1px solid #e0e0e0;
+
+			.velicine {
+				padding: 15px 10px;
+				width: calc( 100% / 8);
+				background-color: #f1f1f1;
+				margin-left: 1px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				&.regija {
+					font-weight: bold;
+				}
+				&.ovisno-o-modelu {
+					justify-content: flex-start;
+					width: 100%;
+					padding: 20px;
+				}
+			}
+		} // .subovi
+	}// .glavni-stupci
+}
+@media screen and (max-width: 768px) {
+	.tablica-red {
+		flex-direction: column; 
+	}
+	.tablica-red .glavni-stupci {
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.tablica-red {
+		width: auto;
+		.glavni-stupci {
+			.subovi {
+				font-size: 11px;
+			}
+		}
+	}
+}

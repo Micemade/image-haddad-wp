@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS hd_mm_product_updates (
+	  id   INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	  timestamp   TIMESTAMP,
+	  post_id  INT(15) NOT NULL,
+	  post_title VARCHAR(255) NOT NULL,
+	  post_status VARCHAR(255) NOT NULL,
+	  post_type VARCHAR(255) NOT NULL,
+	  author VARCHAR(255) DEFAULT NULL
+);
+
+DELIMITER $$
+
+CREATE TRIGGER micemade_product_updates_log
+AFTER UPDATE
+ON hd_posts FOR EACH ROW
+BEGIN
+    IF NEW.post_status = 'publish' AND old.post_status = 'draft' AND old.post_type = 'product' THEN
+        INSERT INTO hd_mm_product_updates(post_id,post_title,post_status,post_type,author)
+        VALUES(old.ID,old.post_title, new.post_status, old.post_type,( SELECT display_name FROM hd_users WHERE ID = new.post_author ) );
+    END IF;
+END$$
+
+DELIMITER ;

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg839"
+   version="1.1"
+   height="512"
+   width="512"
+   sodipodi:docname="asterisk.svg"
+   inkscape:version="1.0beta1 (32d4812, 2019-09-19)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     inkscape:document-rotation="0"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="1209"
+     id="namedview839"
+     showgrid="false"
+     inkscape:zoom="0.35"
+     inkscape:cx="540"
+     inkscape:cy="560"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg839" />
+  <defs
+     id="defs843" />
+  <metadata
+     id="metadata12390">image/svg+xmlOther map symbolsMohamed IbrahimPublic Domainclker.comother map symbols<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title></dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <path
+     inkscape:connector-curvature="0"
+     d="m 223.71484,173.22656 v 4.82813 L 220.30078,174.64062 99.224609,53.564453 53.564453,99.224609 174.64062,220.30078 l 3.41407,3.41406 H 173.22656 2 v 64.57032 h 171.22656 4.82813 l -3.41407,3.41406 -121.076167,121.07617 45.660156,45.66016 121.076171,-121.07617 3.41406,-3.41407 V 338.77344 510 h 64.57032 v -171.22656 -4.82813 l 3.41406,3.41407 121.07617,121.07617 45.66016,-45.66016 -121.07617,-121.07617 -3.41407,-3.41406 H 338.77344 510 v -64.57032 h -171.22656 -4.82813 l 3.41407,-3.41406 L 458.43555,99.224609 412.77539,53.564453 291.69922,174.64062 l -3.41406,3.41407 V 173.22656 2 h -64.57032 z"
+     style="opacity:1;fill:#ff0000;stroke:none;stroke-width:2.47041;stroke-linecap:square;stop-opacity:1"
+     id="rect843" />
+</svg>
